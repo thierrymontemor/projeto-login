@@ -18,8 +18,12 @@
                 <p style="text-align: center; margin-bottom: 12px; font-weight: 600;">Bem-vindo(a)!</p> <p>Faça login informando seu e-mail e sua senha nos campos abaixo.</p>
                 <div id="campos">
                     <form action="login.php" method="POST">
-                        <div class="campos" ><span class="material-symbols-outlined">person</span><input type="email" name="user" id="iuser" placeholder="usuário" autocomplete="username"><br></div>
-                        <div class="campos" ><i class="material-symbols-outlined">lock</i><input type="password" name="senha" id="isenha" placeholder="senha" autocomplete="current-password"><br></div>
+                        <label>
+                            <div class="campos" ><span class="material-symbols-outlined">person</span><input type="text" name="user" id="iuser" placeholder="Usuário" autocomplete="username" required minlength="5" maxlength="12"><br></div>
+                        </label>
+                        <label>
+                            <div class="campos" ><i class="material-symbols-outlined">lock</i><input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="18"><br></div>
+                        </label>
                         <p id="entrar" rel="ientrar"><input type="submit" value="Entrar" id="ientrar"></p><br>
                         <a href="#">Esqueci minha senha</a>
                     </form>
@@ -28,5 +32,8 @@
             
         </section>
     </main>
+    <footer>
+        <p>Página desenvolvida por <a href="https://github.com/thierrymontemor">Montemor</a></p>
+    </footer>
 </body>
 </html>
